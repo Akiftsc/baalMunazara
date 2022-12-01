@@ -5,7 +5,15 @@
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <title>İletişim | Baal Münazara kulübü</title>
     <!-- ? Seo -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJ2HCGBHVZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-TJ2HCGBHVZ');
+    </script>
     <meta name="description" content="Bülent Akarcalı Anadolu Lisesi Münazara Kulübü için İletişim sayfası.">
     <meta property="og:url" content="https://munazara.netlify.app/iletisim.html" />
     <link rel="canonical" href="https://munazara.netlify.app/iletisim.html" />
@@ -47,17 +55,17 @@
                     <label class="text-gray-600 leading-7 text-sm" for=isim>İsim</label>
                     <input name=isim
                         class="bg-white w-full border border-gray-300 duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none px-3 py-1 rounded text-base text-gray-700 transition-colors leading-8"
-                        id=isim placeholder="Mike">
+                        id=isim placeholder="Mike" required>
 
                     <label class="text-gray-600 leading-7 text-sm" for=isim>Soyisim</label>
                     <input name=Soyad
                         class="bg-white w-full border border-gray-300 duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none px-3 py-1 rounded text-base text-gray-700 transition-colors leading-8"
-                        id=soyisim placeholder="Tyson">
+                        id=soyisim placeholder="Tyson" required>
 
                     <label class="text-gray-600 leading-7 text-sm" for=isim>Sınıf</label>
                     <input name=sinif
                         class="bg-white w-full border border-gray-300 duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none px-3 py-1 rounded text-base text-gray-700 transition-colors leading-8"
-                        id=sinif placeholder="9/C">
+                        id=sinif placeholder="9/C" required>
 
 
 
@@ -71,17 +79,17 @@
 
                     <label class="text-gray-600 leading-7 text-sm" for=email>Email</label> <input name=email type=email
                         class="bg-white w-full border border-gray-300 duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none px-3 py-1 rounded text-base text-gray-700 transition-colors leading-8"
-                        id=email placeholder="örn: akif@gmail.com"> <label class="text-gray-600 leading-7 text-sm"
-                        for=tel-no>Telefon Numarası</label>
+                        id=email placeholder="örn: akif@gmail.com" required> <label
+                        class="text-gray-600 leading-7 text-sm" for=tel-no required>Telefon Numarası</label>
                     <input name=tel-no
                         class="bg-white w-full border border-gray-300 duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none px-3 py-1 rounded text-base text-gray-700 transition-colors leading-8"
-                        id=tel-no placeholder="örn: 1234567890">
+                        id=tel-no placeholder="örn: 1234567890" required>
                 </div>
 
                 <div class="relative mb-4"><label class="text-gray-600 leading-7 text-sm" for=message>Notlar /
                         Mesaj</label> <textarea
                         class="bg-white w-full border border-gray-300 duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none px-3 py-1 rounded text-base text-gray-700 transition-colors h-32 leading-6 resize-none"
-                        data-ms-editor=true id=message name=message spellcheck=false></textarea></div><button
+                        data-ms-editor=true id=message name=message spellcheck=false required></textarea></div><button
                     class="rounded bg-[#112E07] border-0 focus:outline-none hover:bg-[#112E07] px-6 py-2 text-lg text-white"
                     id=submitBtn style="background-color: #112E07;">Gönder!</button> <input type="hidden" name="_next"
                     value="https://munazara.netlify.app/thanks.html">
